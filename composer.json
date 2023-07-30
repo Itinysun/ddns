@@ -1,0 +1,33 @@
+{
+    "name": "itinysun/ddns",
+    "alias": "",
+    "description": "DDNS服务器，支持腾讯云和阿里云，可以应用于群晖等场景",
+    "type": "library",
+    "version": "1.0.0",
+    "keywords": ["owl-admin", "extension"],
+    "homepage": "https://github.com/itinysun/ddns",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "itinysun",
+            "email": "860760361@qq.com"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "slowlyo/owl-admin": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "itinysun\\ddns\\": "src/"
+        }
+    },
+    "extra": {
+        "owl-admin": "itinysun\\ddns\\DdnsServiceProvider",
+        "laravel": {
+            "providers": [
+                "itinysun\\ddns\\DdnsServiceProvider"
+            ]
+        }
+    }
+}
