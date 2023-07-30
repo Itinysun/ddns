@@ -14,7 +14,17 @@
 
 ## 安装
 
-通过owl 安装扩展即可
+方式一：composer
+
+```bash
+composer require itinysun/ddns
+```
+
+方式二：下载zip包
+
+https://github.com/Itinysun/ddns/releases
+
+安装后需要owl后台扩展中启用即可
 
 
 ## 使用
@@ -27,3 +37,4 @@
 查看记录详情，会显示一个url 链接，将该链接填写到群晖的dns服务中。不需要账户和密码（随便写）
 
 > 请注意，该URL本身即包含秘钥（token）,所以请不要泄露。
+> 编辑的时候，秘钥字段是有掩码的避免泄露，如果不想修改那就不动秘钥字段即可
