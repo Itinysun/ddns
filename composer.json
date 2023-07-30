@@ -15,7 +15,9 @@
     ],
     "require": {
         "php": ">=8.0",
-        "slowlyo/owl-admin": "*"
+        "slowlyo/owl-admin": "*",
+        "tencentcloud/tencentcloud-sdk-php": "^3.0",
+        "alibabacloud/alidns-20150109": "3.0.7"
     },
     "autoload": {
         "psr-4": {
